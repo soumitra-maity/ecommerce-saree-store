@@ -8,15 +8,15 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "res.cloudinary.com",
         port: "",
-        pathname: "/dprwjsqmt/**", // Your Cloudinary cloud name
+        pathname: "/dprwjsqmt/**", 
       },
       {
         protocol: "https",
-        hostname: "img.clerk.com", // For Clerk avatars
+        hostname: "img.clerk.com", 
       },
     ],
   },
-  // ✅ This tells Vercel to ignore TypeScript errors and build anyway
+  // ✅ THIS PART WAS MISSING: Ignore TypeScript errors during build
   typescript: {
     ignoreBuildErrors: true,
   },
