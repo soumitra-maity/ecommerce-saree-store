@@ -54,7 +54,7 @@ export async function POST(req: Request) {
         // 📧 Trigger background email job via Inngest
         await inngest.send({
           name: "order/confirmed",
-           { orderId: order._id.toString() },
+          data: { orderId: order._id.toString() },
         });
 
         console.log(`✅ Order ${order_id} processed & email triggered.`);
